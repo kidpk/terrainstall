@@ -1,3 +1,11 @@
 #!/bin/sh
 
-echo Hello first script!
+case "$(uname -s)" in 
+    Linux) 
+        echo "This is Linux" 
+    ;;
+    Darwin) 
+        echo "This is Darwin"
+    ;;
+    *)
+    esac
